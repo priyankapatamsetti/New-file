@@ -1,0 +1,22 @@
+<!-- <table>
+	<tr *ngFor="let number of numbers">
+		<td [ngClass]="{
+            'red' : number <= 40,
+            'orange' : number > 40 && number <= 70,
+            'green'  : number > 70
+         }">{{ number }}
+		</td>
+	</tr>
+</table> -->
+
+<div>
+
+  <div *ngFor="let number of numbers">
+  <input [ngClass]="{
+    'red' : number <= 40,
+    'orange' : number > 40 && number <= 70,
+    'green'  : number > 70
+ }" type="text" value={{number}}>  
+  </div>
+
+</div>
