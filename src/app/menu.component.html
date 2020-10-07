@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button [matMenuTriggerFor]="menu1Menu">Menu-1</button>
+
+    <mat-menu #menu1Menu="matMenu" yPosition="above">
+      <button mat-menu-item><mat-icon>face</mat-icon>face</button> 
+      <button mat-menu-item><mat-icon>arrow_circle_up</mat-icon>arrow_circle_up</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="menu2Menu">Menu-2</button>
+    <mat-menu #menu2Menu="matMenu" yPosition="below">
+      <button mat-menu-item><mat-icon>check_circle_outline</mat-icon>check_circle_outline</button>
+      <button mat-menu-item><mat-icon>stars</mat-icon>stars</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="menu3Menu">Menu-3</button>
+    <mat-menu #menu3Menu="matMenu" xPosition="before">
+      <button mat-menu-item><mat-icon>update</mat-icon>update</button>
+      <button mat-menu-item><mat-icon>visibility_off</mat-icon>visibility_off</button>
+    </mat-menu>
+    
+    
+    <button mat-button [matMenuTriggerFor]="menu4Menu">Menu-4</button>
+    <mat-menu #menu4Menu="matMenu" xPosition="after">
+      <button mat-menu-item><mat-icon>face</mat-icon>face</button>
+      <button mat-menu-item><mat-icon>signal_cellular_alt</mat-icon>signal_cellular_alt</button>
+    </mat-menu>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
+  
+
